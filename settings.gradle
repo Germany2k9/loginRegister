@@ -1,0 +1,2 @@
+rootProject.name = "loginRegister"
+include ':app'
