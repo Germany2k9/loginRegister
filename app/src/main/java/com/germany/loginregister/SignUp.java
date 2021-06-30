@@ -39,6 +39,14 @@ public class SignUp extends AppCompatActivity {
 
         progressBar = findViewById(R.id.progress);
 
+        textViewLogin.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Login.class);
+                startActivity(intent);
+                finish();
+            }
+        });
         buttonSignUp.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -72,7 +80,7 @@ public class SignUp extends AppCompatActivity {
                                 data[2] = password;
                                 data[3] = email;
                                 PutData putData =
-                                        PutData("http://192.168.12.91/LoginRegister/signup.php", "POST", field, data);
+                                        new PutData("http://212.142.193.210:15001/german/signup.php", "POST", field, data);
 
                                 if (putData.startPut()) {
                                     if (putData.onComplete()) {

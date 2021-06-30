@@ -7,5 +7,6 @@
     <string name="fullname">Fullname</string>
     <string name="email">Email</string>
     <string name="loginhere">Already have an account?<u> Login </u></string>
-    <string name="signUpHere">Create a new account <u>SignUp</u>> </string>
+    <string name="signUpHere">Crear una nueva Cuenta <u>SignUp</u>> </string>
+    <string name="Welcome">Bienvenido!</string>
 </resources>
