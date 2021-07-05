@@ -1,4 +1,5 @@
 <resources>
+    <string name="app_name1">OnlineProductsApp</string>
     <string name="app_name">loginRegister</string>
     <string name="username">username</string>
     <string name="password">password</string>
