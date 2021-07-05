@@ -1,6 +1,10 @@
 package com.germany.loginregister.adapter;
 
+import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Context;
+import android.content.Intent;
+import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.germany.loginregister.MainActivity;
 import com.germany.loginregister.R;
 import com.germany.loginregister.model.Products;
+import com.germany.loginregister.productDetails;
 
 import java.util.List;
 
@@ -38,6 +43,20 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         holder.prodName.setText(productsList.get(position).getProductName());
         holder.prodQty.setText(productsList.get(position).getProductQty());
         holder.prodPrice.setText(productsList.get(position).getProductPrice());
+
+
+        holder.itemView.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(context, productDetails.class);
+
+                Pair[] pairs = new Pair[1];
+                pairs[0] = new Pair<View,String>(holder.prodImage,"image");
+                ActivityOptions activityOptions =  ActivityOptions.makeSceneTransitionAnimation((Activity)context,pairs);
+                context.startActivity(i , activityOptions.toBundle());
+            }
+        });
     }
 
     @Override
