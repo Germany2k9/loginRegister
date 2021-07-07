@@ -10,6 +10,7 @@ import com.germany.loginregister.adapter.ProductAdapter;
 import com.germany.loginregister.adapter.ProductCategoryAdapter;
 import com.germany.loginregister.model.Products;
 import com.germany.loginregister.model.productCategory;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
      ProductCategoryAdapter productCategoryAdapter;
      RecyclerView productCatRecycler, prodItemRecycler;
      ProductAdapter productAdapter;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

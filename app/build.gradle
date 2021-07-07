@@ -37,11 +37,16 @@ dependencies {
     implementation 'com.google.android.material:material:1.4.0-rc01'
     implementation 'com.github.VishnuSivadasVS:Advanced-HttpURLConnection:1.2'
     implementation 'com.google.firebase:firebase-analytics'
+
+    implementation 'com.firebaseui:firebase-ui-auth:6.4.0'
+
+
     testImplementation 'junit:junit:4.13'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-core'
     implementation 'com.google.firebase:firebase-firestore'
 }
 apply plugin: 'com.android.application'
