@@ -61,9 +61,9 @@ public class SignUp extends AppCompatActivity {
                     fullname =  String.valueOf(textInputEditTextFullName.getText());
                     username =  String.valueOf(textInputEditTextUserName.getText());
                     password =  String.valueOf(textInputEditTextPassword.getText());
-                    email =  String.valueOf(textInputEditTextmail.getText());
+                     email   =  String.valueOf(textInputEditTextmail.getText());
 
-                    if (!password.equals("") && !email.equals("")) {
+                    if (!password.equals("") && !email.equals("") && !username.equals("") && !fullname.equals("")) {
 
 
                         //Start ProgressBar first (Set visibility VISIBLE)
@@ -121,7 +121,7 @@ public class SignUp extends AppCompatActivity {
 
     }
     public void crearUser(){
-        mAuth.createUserWithEmailAndPassword(email, password)
+        mAuth.createUserWithEmailAndPassword(email, password, fullname, username)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     private static final String TAG ="Crear usuario" ;
 
