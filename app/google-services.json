@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "887314280282",
+    "project_id": "testfirebase-appecommerce",
+    "storage_bucket": "testfirebase-appecommerce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887314280282:android:2d55c27ebe535f0909cd63",
+        "android_client_info": {
+          "package_name": "com.germany.loginregister"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887314280282-gfmok6il1vc76qk57p19t8qopcjj1n63.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvEpTIkQ6PFopVJU3-UTY1bBN2x1Ck3MY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887314280282-gfmok6il1vc76qk57p19t8qopcjj1n63.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -26,7 +26,9 @@
         <activity
             android:name=".SignUp"
             android:theme="@style/Theme.Design.Light.NoActionBar"></activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar"
+            />
     </application>
 
 </manifest>
