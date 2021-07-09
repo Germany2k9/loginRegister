@@ -121,7 +121,7 @@ public class SignUp extends AppCompatActivity {
 
     }
     public void crearUser(){
-        mAuth.createUserWithEmailAndPassword(email, password, fullname, username)
+        mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     private static final String TAG ="Crear usuario" ;
 

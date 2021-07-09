@@ -10,4 +10,19 @@
     <string name="loginhere">Already have an account?<u> Login </u></string>
     <string name="signUpHere">Crear una nueva Cuenta <u>SignUp</u>> </string>
     <string name="Welcome">Bienvenido!</string>
+    <string name="TitleNewProduct">Alta Nuevo Producto</string>
+    <string name="AltaProducto">Alta Nombre Producto</string>
+    <string name="categoriaProducto">Categoria Producto</string>
+
+    <string-array name="labels_array">
+
+        <item>Alimentacion</item>
+        <item>Bebidas</item>
+        <item>Cuidado Personal</item>
+        <item>Electrodomesticos</item>
+        <item>Tecnologia</item>
+        <item>jueguetes</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
